@@ -1,0 +1,57 @@
+@import "_variables";
+
+// =====================================
+// Reference - font names
+// =====================================
+// font-family: 'Satisfy', cursive;
+// font-family: 'Noto Serif', serif;
+// font-family: 'Overpass', sans-serif;
+
+
+// =====================================
+// Override:
+// vendor/magento/theme-frontend-blank/web/css/source/_typography.less
+// =====================================
+
+//
+//  Common
+//  _____________________________________________
+
+& when (@media-common = true) {
+
+}
+
+//
+//  Desktop
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'min') and (@break = @screen__m) {
+
+}
+
+//
+//  Mobile
+//  _____________________________________________
+
+.media-width(@extremum, @break) when (@extremum = 'max') and (@break = @screen__m) {
+
+}
+
+
+// =====================================
+// Override:
+// lib/web/css/source/lib/_typography.less
+// =====================================
+
+//
+//  Links
+//  ---------------------------------------------
+
+.cms-content {
+  a,
+  a:visited,
+  .alink,
+  .alink:visited {
+    text-decoration: underline;
+  }
+}
